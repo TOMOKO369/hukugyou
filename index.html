@@ -3,180 +3,215 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Harajuku Career Diagnosis</title>
+<title>Finding Your Magical Side Hustle - Wonderland Career</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        "primary": "#ec5b13",
-        "harajuku-pink": "#ff0080",
-        "harajuku-blue": "#00d4ff",
-        "harajuku-yellow": "#fff200",
-        "background-light": "#f8f6f6",
-        "background-dark": "#221610",
-      },
-      fontFamily: {
-        "display": ["Public Sans", "sans-serif"]
-      },
-      borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-    },
-  },
-}
-</script>
-<link rel="stylesheet" href="style.css">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#ef3976",
+                "background-light": "#f8f6f6",
+                "background-dark": "#221016",
+                "wonder-mint": "#e0f2f1",
+                "wonder-lavender": "#f3e5f5",
+                "wonder-blue": "#e3f2fd",
+              },
+              fontFamily: {
+                "display": ["Newsreader", "serif"]
+              },
+              borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<link rel="stylesheet" href="style.css?v=3">
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col items-center">
-
-<div class="relative flex h-auto min-h-screen w-full max-w-md flex-col bg-harajuku-yellow/20 dark:bg-background-dark overflow-x-hidden border-x-4 border-black pb-28">
-    <!-- Header -->
-    <div class="flex items-center bg-harajuku-pink p-4 border-b-4 border-black justify-between sticky top-0 z-50">
-        <div class="text-white flex size-12 shrink-0 items-center justify-center bg-black rounded-full border-2 border-white">
-            <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<div class="relative flex min-h-screen w-full flex-col card-pattern overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation Header -->
+<header class="flex items-center justify-between border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4 sticky top-0 z-50">
+    <div class="flex items-center gap-3">
+        <div class="size-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-2xl">auto_fix_high</span>
         </div>
-        <h2 class="text-white text-xl font-black leading-tight tracking-tighter flex-1 text-center italic uppercase">
-            Style Career Lab
-        </h2>
-        <div class="flex w-12 items-center justify-end">
-            <button class="flex size-12 cursor-pointer items-center justify-center rounded-full bg-harajuku-blue border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-harajuku-blue/80 transition">
-                <span class="material-symbols-outlined text-white">favorite</span>
-            </button>
+        <h2 class="text-xl font-bold tracking-tight text-primary">Wonderland Career</h2>
+    </div>
+    <nav class="hidden md:flex gap-8 items-center">
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Tea Room</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Results</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="#">About Alice</a>
+    </nav>
+    <div class="flex items-center gap-4">
+        <button class="size-10 rounded-full bg-wonder-mint flex items-center justify-center text-teal-700 hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined">favorite</span>
+        </button>
+        <div class="size-10 rounded-full bg-primary overflow-hidden border-2 border-primary/20">
+            <img class="w-full h-full object-cover" data-alt="Portrait of a whimsical girl in lolita fashion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYHg4cd__pyav2CmEtnLMjwM_H_cI9CX572fELwjVr3_HRDpfeVvlSEZ4jOStNXfJeLYBaIff4y5SicEqS4U5Das5QpcYNjKEr9Ho5El8VvtqVCDuU0nrzJrHJyrDQ5OXZwXIISaFr_ttNBZ0dV6d09suHHusH8oZlwsWX-ds4TWHbdF05HYIoiBrC-Ss4Wax_qQWZgVo6KyRTqNYRkp7cfcHpV2RJS9JCwbl9ZdSZbH6ty78kiuAQYSJilJv-OtKJri8sPJKAplM"/>
         </div>
     </div>
-
-    <!-- Intro Screen -->
-    <div id="intro-screen" class="flex flex-col">
-        <!-- Hero Section -->
-        <div class="relative p-4 pt-8">
-            <div class="absolute top-4 right-6 z-10 sticker-rotate-2 bg-harajuku-blue text-white px-3 py-1 font-black border-2 border-black text-sm uppercase">New!</div>
-            <div class="absolute top-20 left-4 z-10 sticker-rotate-1 bg-primary text-white p-2 rounded-full border-2 border-black">
-                <span class="material-symbols-outlined">star</span>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center px-4 py-12">
+    <!-- Main Quiz Container (Intro) -->
+    <div id="intro-screen" class="max-w-4xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white/40 dark:bg-background-dark/40 p-8 rounded-xl border border-white/60 shadow-xl backdrop-blur-sm">
+        <!-- Left Column: Visuals -->
+        <div class="relative group">
+            <!-- Decorative Ribbon -->
+            <div class="absolute -top-6 -left-6 bg-primary text-white px-6 py-2 rounded-full rotate-[-12deg] shadow-lg z-10 flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm">cake</span>
+                <span class="text-sm font-bold uppercase tracking-widest">New Quest</span>
             </div>
-            <div class="@container">
-                <div class="@[480px]:px-4">
-                    <div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-[400px] y2k-border bg-harajuku-blue" data-alt="Cute Harajuku girl character holding a large colorful lollipop" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDI25auHNK_CRLwMDPuqbS-r_2vnzD4_ptwalE7l3k7NWS_1dAH_NmKklvk2B3sGb0UvLV6iWy900KPj-YjFuTQUs0HmDq6IflmUOajEFzlueIhYeMaAnjvPDS_C2VLEIbD961RJNxLBAFXqs3ByxfTYFxI7yYbWspFVWUIAhuRVDspeKlv7vqzJ01lx4ToKOrSnl2gjGJ2_fbA2nR6RoJOzfYhU3D4CYwsAD2wiwzNdzniNrCyI_rb1vzJCTGSZO15TwRHyWU");'>
-                        <div class="bg-black/60 p-4 backdrop-blur-sm">
-                            <p class="text-harajuku-yellow font-black text-sm uppercase tracking-widest">Aesthetic Diagnosis</p>
-                        </div>
+            <div class="aspect-square rounded-xl overflow-hidden border-8 border-white shadow-2xl relative">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Tea party table with strawberries and lace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0fD0_xt7zqk6O1-eSFUQZ_i5qS12vlcYIDV8KNS6yi9PdU1bJSIW9relTafg8lVIAUx9Lb6NMljR9dEJ-lNGg11RpSfRL9EOy6KKl-AbQD6tTyYBu_MJSKe4E3wRcEl2s0IYa4Q0hKevojTUkBam_RoDR2pgADFI5qL3MzW5KXGePqYMz0GgulhrJuAM7EC-ttagi8Og7PegNE4AhKSjqPMygKeUauB_Ch3rKDUQ53xdSdOzV58RwnaC9xPQ8pyhtBWQBtc_nKmI"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+                <!-- Floating Elements Icons -->
+                <div class="absolute bottom-4 right-4 flex gap-2">
+                    <div class="bg-white/90 p-3 rounded-full shadow-lg text-primary">
+                        <span class="material-symbols-outlined">restaurant</span>
+                    </div>
+                    <div class="bg-white/90 p-3 rounded-full shadow-lg text-primary">
+                        <span class="material-symbols-outlined">pets</span>
                     </div>
                 </div>
             </div>
+            <!-- Floating Strawberry Decoration -->
+            <div class="absolute -bottom-4 -left-4 size-20 bg-wonder-mint rounded-full flex items-center justify-center shadow-lg border-4 border-white animate-bounce">
+                <span class="material-symbols-outlined text-red-400 text-4xl">nutrition</span>
+            </div>
         </div>
-
-        <!-- Title & Description -->
-        <div class="px-6 py-6 text-center space-y-4">
-            <h1 class="text-black dark:text-white tracking-tighter text-[42px] font-black leading-[0.9] uppercase italic">
-                Freelance <span class="text-harajuku-pink">vs</span> <br/>
-                <span class="bg-harajuku-yellow border-2 border-black px-2 text-black">Side Hustle?</span>
-            </h1>
-            <p class="text-slate-800 dark:text-slate-300 text-lg font-bold leading-tight">
-                Discover your Harajuku-inspired career path with our lollipop-pop aesthetic tool! ✨
-            </p>
-        </div>
-
-        <!-- Action Button -->
-        <div class="px-6 pb-12">
-            <button id="start-btn" class="w-full bg-primary hover:bg-primary/90 text-white font-black text-2xl py-6 rounded-xl y2k-border flex items-center justify-center gap-4 group transition-transform active:scale-95">
-                DIAGNOSIS START
-                <span class="material-symbols-outlined text-3xl">bolt</span>
-            </button>
-            <div class="mt-8 grid grid-cols-2 gap-4">
-                <div class="bg-harajuku-blue/30 p-4 rounded-lg border-2 border-black flex flex-col items-center">
-                    <span class="material-symbols-outlined text-harajuku-pink mb-2">style</span>
-                    <span class="text-xs font-black uppercase">12 Style Result</span>
+        <!-- Right Column: Content -->
+        <div class="flex flex-col gap-8">
+            <div class="space-y-4 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-wonder-lavender text-purple-700 font-medium text-sm">
+                    <span class="material-symbols-outlined text-base">magic_button</span>
+                    <span>Career Path Diagnosis</span>
                 </div>
-                <div class="bg-harajuku-pink/30 p-4 rounded-lg border-2 border-black flex flex-col items-center">
-                    <span class="material-symbols-outlined text-harajuku-blue mb-2">group</span>
-                    <span class="text-xs font-black uppercase">5k+ Diagnosed</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-slate-900 dark:text-slate-100">
+                    Finding Your <span class="text-primary italic">Magical</span> Side Hustle
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-md">
+                    Which wonderland role suits you best? Let's find your hidden talents hidden beneath the tea and roses!
+                </p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <button id="start-btn" class="group relative flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-white py-6 px-10 rounded-full text-xl font-bold shadow-[0_10px_30px_-10px_rgba(239,57,118,0.5)] transition-all hover:-translate-y-1">
+                    <span class="material-symbols-outlined">play_circle</span>
+                    Start Diagnosis
+                    <div class="absolute -right-2 -top-2 size-8 bg-yellow-400 rounded-full flex items-center justify-center text-xs shadow-md text-slate-900">
+                        <span class="material-symbols-outlined text-sm">star</span>
+                    </div>
+                </button>
+                <div class="flex items-center justify-center lg:justify-start gap-6 mt-4 opacity-70">
+                    <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-primary">schedule</span>
+                        <span class="text-xs font-medium">3 mins</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-primary">group</span>
+                        <span class="text-xs font-medium">12k+ dreamers</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Mini Card Grid -->
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                <div class="bg-wonder-blue p-4 rounded-lg flex flex-col items-center gap-2 border border-blue-100">
+                    <span class="material-symbols-outlined text-blue-500">coffee</span>
+                    <span class="text-[10px] font-bold uppercase text-blue-700 tracking-tighter">Tea Party Planner</span>
+                </div>
+                <div class="bg-wonder-mint p-4 rounded-lg flex flex-col items-center gap-2 border border-teal-100">
+                    <span class="material-symbols-outlined text-teal-500">palette</span>
+                    <span class="text-[10px] font-bold uppercase text-teal-700 tracking-tighter">Rose Painter</span>
+                </div>
+                <div class="bg-wonder-lavender p-4 rounded-lg flex flex-col items-center gap-2 border border-purple-100">
+                    <span class="material-symbols-outlined text-purple-500">watch</span>
+                    <span class="text-[10px] font-bold uppercase text-purple-700 tracking-tighter">Time Keeper</span>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Quiz Screen -->
-    <div id="quiz-screen" class="hidden flex-col p-6 space-y-8 flex-1 justify-center mt-8">
-        <div class="w-full bg-white border-4 border-black rounded-full h-8 p-1 relative">
-            <div id="progress-bar" class="bg-harajuku-pink h-full rounded-full w-0 transition-all duration-300"></div>
-            <div id="progress-text" class="absolute inset-0 flex items-center justify-center font-black text-sm uppercase tracking-widest text-black mix-blend-overlay drop-shadow-md">Question 1 / 30</div>
+    <div id="quiz-screen" class="hidden flex-col gap-8 max-w-4xl w-full bg-white/40 dark:bg-background-dark/40 p-8 rounded-xl border border-white/60 shadow-xl backdrop-blur-sm">
+        
+        <!-- Progress Bar -->
+        <div class="w-full bg-white/50 border border-primary/20 rounded-full h-4 relative overflow-hidden">
+            <div id="progress-bar" class="bg-primary/50 h-full w-0 transition-all duration-300"></div>
+        </div>
+        <div id="progress-text" class="text-right text-sm font-bold text-primary italic">Question 1 / 30</div>
+        
+        <!-- Question -->
+        <div class="bg-white/80 p-8 rounded-xl text-center border border-primary/10 shadow-sm relative">
+            <div class="inline-flex items-center gap-2 px-4 py-1 mb-4 rounded-full bg-wonder-blue text-blue-700 font-medium text-sm">
+                <span class="material-symbols-outlined text-base">help</span>
+                <span>Question</span>
+            </div>
+            <h2 id="question-text" class="text-2xl font-bold leading-relaxed text-slate-800">質問テキストがここに入ります</h2>
         </div>
         
-        <div class="bg-white p-6 rounded-xl y2k-border text-center shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] relative">
-            <div class="absolute -top-4 -left-4 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center font-black text-xl border-2 border-black sticker-rotate-1">Q</div>
-            <h2 id="question-text" class="text-xl font-bold leading-relaxed pt-2">質問テキストがここに入ります</h2>
-        </div>
-        
-        <div id="options-container" class="flex flex-col gap-4">
+        <!-- Options -->
+        <div id="options-container" class="grid grid-cols-1 gap-3">
             <!-- Options injected via JS -->
         </div>
     </div>
 
     <!-- Result Screen -->
-    <div id="result-screen" class="hidden flex-col p-6 space-y-6 flex-1 justify-center items-center text-center mt-8">
-        <div class="sticker-rotate-1 bg-harajuku-yellow text-black border-4 border-black px-6 py-2 rounded-full font-black text-2xl mb-2">
-            YOUR RESULT
+    <div id="result-screen" class="hidden flex-col items-center text-center gap-6 max-w-4xl w-full bg-white/40 dark:bg-background-dark/40 p-8 md:p-12 rounded-xl border border-white/60 shadow-xl backdrop-blur-sm">
+        
+        <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-wonder-lavender text-purple-700 font-medium text-sm mb-2">
+            <span class="material-symbols-outlined text-base">auto_awesome</span>
+            <span>Diagnosis Result</span>
         </div>
-        <h2 id="result-type" class="text-3xl font-black text-harajuku-pink italic uppercase leading-tight mb-2 py-4 bg-white/50 w-full rounded-xl border-4 border-black y2k-border">結果タイプ</h2>
         
-        <div id="result-score" class="font-bold text-lg bg-black text-white px-6 py-2 rounded-full mb-6 border-2 border-harajuku-blue shadow-[4px_4px_0px_0px_rgba(0,212,255,1)]">スコア: 0 / 150</div>
+        <h2 id="result-type" class="text-4xl md:text-5xl font-extrabold text-primary italic leading-tight">結果タイプ</h2>
         
-        <div class="relative w-full">
-            <div class="absolute -top-4 -right-4 text-4xl sticker-rotate-2 z-10">✨</div>
-            <div id="result-desc" class="bg-white p-6 rounded-xl border-4 border-black y2k-border text-left font-bold leading-relaxed mb-8 whitespace-pre-line text-slate-800 shadow-[6px_6px_0px_0px_rgba(255,0,128,1)] text-[15px]">
+        <div id="result-score" class="font-bold text-lg bg-white text-slate-600 px-6 py-2 rounded-full border border-primary/20 shadow-sm">スコア: 0 / 150</div>
+        
+        <div class="relative w-full max-w-2xl mt-4">
+            <div class="absolute -top-4 -left-4 text-primary opacity-50"><span class="material-symbols-outlined text-4xl">format_quote</span></div>
+            <div id="result-desc" class="bg-white/80 p-6 md:p-8 rounded-xl border border-primary/10 text-left font-medium leading-relaxed whitespace-pre-line text-slate-700 shadow-sm text-lg relative z-10">
                 ここに診断結果の詳細な解説とコーチング的アドバイスが表示されます。
             </div>
+            <div class="absolute -bottom-4 -right-4 text-primary opacity-50"><span class="material-symbols-outlined text-4xl transform rotate-180">format_quote</span></div>
         </div>
         
-        <button id="restart-btn" class="w-full bg-harajuku-blue hover:bg-harajuku-blue/90 text-black font-black text-2xl py-4 rounded-xl y2k-border flex items-center justify-center gap-3 transition-transform active:scale-95">
-            RETRY
+        <button id="restart-btn" class="mt-8 group relative flex items-center justify-center gap-2 bg-wonder-mint hover:bg-teal-100 text-teal-800 py-4 px-10 rounded-full text-lg font-bold shadow-sm transition-all hover:-translate-y-1">
             <span class="material-symbols-outlined">refresh</span>
+            Retake Tea Party
         </button>
     </div>
 
-    <!-- Footer Decor -->
-    <div class="flex flex-col flex-1 justify-end">
-        <div class="flex justify-center gap-2 pb-6 opacity-30 mt-8">
-            <span class="material-symbols-outlined text-4xl">favorite</span>
-            <span class="material-symbols-outlined text-4xl">star</span>
-            <span class="material-symbols-outlined text-4xl">flare</span>
-            <span class="material-symbols-outlined text-4xl">favorite</span>
+</main>
+
+<!-- Bottom Navigation Bar -->
+<footer class="bg-white/60 dark:bg-background-dark/60 border-t border-primary/10 py-8 px-6 md:px-20 mt-auto">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 max-w-6xl mx-auto">
+    <div class="flex items-center gap-4 text-primary/60">
+        <span class="material-symbols-outlined">playing_cards</span>
+        <span class="material-symbols-outlined">playing_cards</span>
+        <span class="material-symbols-outlined">playing_cards</span>
+        <span class="material-symbols-outlined">playing_cards</span>
+    </div>
+    <div class="flex gap-8">
+        <div class="flex flex-col">
+            <span class="text-primary font-bold text-sm">Professional Path</span>
+            <p class="text-[10px] text-slate-500">Unlock your earning potential in Wonderland</p>
+        </div>
+        <div class="flex flex-col">
+            <span class="text-primary font-bold text-sm">Tea Etiquette</span>
+            <p class="text-[10px] text-slate-500">Learn the manners of high-society earners</p>
         </div>
     </div>
-
-    <!-- Navigation Bar -->
-    <div class="fixed bottom-0 left-0 right-0 z-50 flex justify-center p-4 pointer-events-none">
-        <div class="flex w-full max-w-md gap-2 border-4 border-black bg-white px-4 pb-3 pt-2 rounded-2xl shadow-[0_-4px_10px_rgba(0,0,0,0.1)] pointer-events-auto shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
-                <div class="flex h-8 items-center justify-center">
-                    <span class="material-symbols-outlined text-[28px] font-bold" style="font-variation-settings: 'FILL' 1">home</span>
-                </div>
-                <p class="text-[10px] font-black uppercase leading-normal tracking-tighter">Home</p>
-            </a>
-            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-harajuku-pink transition-colors" href="#">
-                <div class="flex h-8 items-center justify-center">
-                    <span class="material-symbols-outlined text-[28px]">format_list_bulleted</span>
-                </div>
-                <p class="text-[10px] font-black uppercase leading-normal tracking-tighter">History</p>
-            </a>
-            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-harajuku-blue transition-colors" href="#">
-                <div class="flex h-8 items-center justify-center">
-                    <span class="material-symbols-outlined text-[28px]">palette</span>
-                </div>
-                <p class="text-[10px] font-black uppercase leading-normal tracking-tighter">Style</p>
-            </a>
-            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-harajuku-blue transition-colors" href="#">
-                <div class="flex h-8 items-center justify-center">
-                    <span class="material-symbols-outlined text-[28px]">person</span>
-                </div>
-                <p class="text-[10px] font-black uppercase leading-normal tracking-tighter">Profile</p>
-            </a>
-        </div>
+    <div class="text-xs font-medium text-slate-400">
+        © Wonderland Career Agency Ltd. 1865-2024
     </div>
 </div>
-
-<script src="script.js"></script>
+</footer>
+</div>
+</div>
+<script src="script.js?v=3"></script>
 </body>
 </html>

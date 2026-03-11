@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>副業 vs フリーランス 適性診断</title>
+    <meta name="description" content="心理学・コーチング・職業診断の観点から作られた30の質問で、あなたが「副業」向きか「フリーランス」向きかを正確に診断します。">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+        
+        <!-- Intro Screen -->
+        <div id="intro-screen" class="glass-card fade-in">
+            <h1>副業 vs フリーランス<br>適性診断</h1>
+            <p class="subtitle">
+                働き方が多様化する現代。<br>
+                あなたは組織に属しながら安全に稼ぐ「副業」向き？<br>
+                それとも自由と裁量を手にする「フリーランス」向き？<br>
+                心理学やキャリアコーチングに基づいた30の質問から、あなたの最適な働き方を診断します。
+            </p>
+            <button id="start-btn" class="btn-primary">診断をスタートする（無料・登録不要）</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="glass-card hidden">
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <div id="progress-text" class="progress-text">質問 1 / 30</div>
+            
+            <div style="margin-top: 2rem;">
+                <h2 id="question-text" class="question-text">質問テキストがここに入ります</h2>
+                <div id="options-container" class="options-grid">
+                    <!-- Options injected via JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="glass-card hidden">
+            <div class="result-header">
+                <h2>あなたの診断結果</h2>
+                <div id="result-type" class="result-type">結果タイプ</div>
+                <div id="result-score" class="result-score">スコア: 0 / 150</div>
+            </div>
+            
+            <div class="result-description" id="result-desc">
+                ここに診断結果の詳細な解説とコーチング的アドバイスが表示されます。
+            </div>
+            
+            <button id="restart-btn" class="btn-primary restart-btn">もう一度診断する</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
